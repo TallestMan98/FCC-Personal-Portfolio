@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap');
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.4);
+  background: rgba(210,100,50,1);
+  top: 0;
+  left: 0;
+}
+
+#navbar ul{
+  margin: 0 0;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar a {
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem 1rem;
+  color: white;
+}
+
+#navbar a:hover {
+  background: rgb(0, 80, 150);
+  transition: ease-out 200ms;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Raleway', Arial;
+  font-size: 4rem;
+  font-weight: 1000;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: rgba(210,100,50,1);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: rgba(50,50,50,0.9);
+  color: white;
+  height: 100vh;
+}
+
+#projects {
+  border-top: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3rem;
+  background: rgba(0,150,160,1);
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 315px 315px;
+}
+
+#Tribute {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#Survey {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#Product {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#Technical {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.project-tile {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 1.2rem;
+  width: 20%;
+  padding: 1rem;
+  background: rgba(0,220,230,1);
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #DDD;
+  transition: ease-out 100ms;
+}
+
+#contact {
+  border-top: solid 2px black;
+  padding-top: 2rem;
+  background: rgba(50,50,50,0.9);
+  color: white;
+}
+
+#contact a {
+  color: rgba(210,100,50,1);
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: font-size 300ms;
+  font-weight: 800;
+}
+
+#contact a:hover {
+  font-size: 1.4rem;
+  transition: ease-out 300ms;
+}
+
+#contact p {
+  font-size: 1.2rem;  
+  color: rgba(210,100,50,1);
+  font-weight: 800;
+}
+
+#footer {
+  text-align: justify;
+  border-top: solid 2px black;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#footer p {
+  color: white;
+  font-size:
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    justify-content: center;
+  }
+  .project-grid {
+  grid-template-columns: 2% 48% 48% 2%;
+  }
+  #buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}
